@@ -1,12 +1,7 @@
-import Mycomponent from './MyComponent';
+import Say from './Say';
 
 const App = () => {
-  return (
-    <Mycomponent name={'myComp'} favoriteNumber={1}>
-      {' '}
-      react{' '}
-    </Mycomponent>
-  );
+  return <Say />;
 };
 
 export default App;
