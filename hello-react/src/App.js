@@ -21,9 +21,9 @@ class App extends Component {
     return (
       <div>
         <button onClick={this.handleClick}>랜덤 색상</button>
-        <ErrorBoundary>
-          <LifeCycleSample color={this.state.color} />
-        </ErrorBoundary>
+        {/* <ErrorBoundary> */}
+        <LifeCycleSample color={this.state.color} />
+        {/* </ErrorBoundary> */}
       </div>
     );
   }

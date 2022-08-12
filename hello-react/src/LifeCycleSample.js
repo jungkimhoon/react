@@ -16,7 +16,7 @@ class LifeCycleSample extends Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log('getDerivedStateFromProps');
 
-    if (nextProps.color != prevState.color) {
+    if (nextProps.color !== prevState.color) {
       return { color: nextProps.color };
     }
 
@@ -70,7 +70,7 @@ class LifeCycleSample extends Component {
 
     return (
       <div>
-        {this.props.missing.value}
+        {/* {this.props.missing.value} */}
         <h1 style={style} ref={(ref) => (this.myRef = ref)}>
           {this.state.number}
         </h1>
